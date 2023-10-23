@@ -1,0 +1,27 @@
+body {
+    background-color: #cfebe8;
+}
+h1 {
+    color: darkblue;
+    font-size: 40px;
+}
+
+.descricao {
+    color: chocolate;
+    font-family: Arial;
+    font-size: 20px;
+}
+
+.detalhe {
+    color: rebeccapurple;
+    font-family: 'Times New Roman';
+}
+
+#titulo {
+    color: darkgreen;
+    font-size: 25px;
+    font-family: Arial;
+    font-weight: bold;
+    text-align: center;
+    background-color: black;
+}

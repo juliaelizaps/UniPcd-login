@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Página de Login</title>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: white;
+  }
+
+  .login-container {
+    display: flex;
+    width: 100%;
+  }
+
+  .left-side {
+    flex: 0;
+    background-color: white;
+    padding: 190px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .right-side {
+    flex: 1;
+    background: linear-gradient(to bottom, #50C878, #1E90FF, #FFD700);
+    color: white;
+    padding: 50px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .login-form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form-group {
+    margin-bottom: 15px;
+  }
+
+  label {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+
+  .custom-input {
+    padding: 10px;
+    border: none;
+    border-radius: 100px;
+    background-color: #bbb6b6fd;
+    color: #333;
+    text-align: center;
+  }
+
+  .login-button {
+    background-color: #1E90FF;
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 100px;
+    cursor: pointer;
+    text-align: center;
+  }
+
+  .subscribe-button {
+    background-color: #1E90FF;
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 100px;
+    cursor: pointer;
+    text-align: center;
+  }
+
+  .login-button:hover {
+    background-color: #1874CD;
+  }
+
+  .remember-password {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+  }
+
+  .register-link,
+
+  .forgot-password-link {
+    margin-top: 10px;
+    text-align: center;
+    color: white;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+</style>
+</head>
+<body>
+  <div class="login-container">
+    <div class="left-side">
+      <img src="./image.png" alt="Imagem" style="max-width: 100%; height: auto; margin-bottom: 30px">
+      
+      <form class="login-form">
+        <div class="form-group">
+          <label for="username"></label>
+          <input type="cpf" id="username" name="username" class="custom-input" placeholder="CPF ou CNPJ">
+        </div>
+        <div class="form-group">
+          <label for="password"></label>
+          <input type="password" id="password" name="password" class="custom-input" placeholder="Senha">
+        </div>
+        <div class="remember-password">
+          <input type="checkbox" id="remember" name="remember">
+          <label for="remember" style="margin-left: 5px;">Lembrar senha</label>
+        </div>
+        <button class="login-button" type="submit">Entrar</button>
+        <br>
+        <button class="subscribe-button" type="submit">Cadastre-se</button>
+      </form>
+      <div class="forgot-password-link"><a href="#">Esqueci minha senha</a></div>
+    </div>
+    <div class="right-side">
+      <h2>Bem-vindo ao espaço UniPCD</h2>
+      <p>Entre com suas credenciais para acessar o sistema.</p>
+      <img src="./pessoas.png" width="512px" height="512px">
+    </div>
+  </div>
+</body>
+</html>
